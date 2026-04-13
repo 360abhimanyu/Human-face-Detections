@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f2027;
+  color: white;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://images.unsplash.com/photo-1526378722484-cc5c510b0f46') no-repeat center/cover;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.6);
+  padding: 40px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.overlay h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+.overlay p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* Card */
+.card {
+  width: 80%;
+  max-width: 700px;
+  margin: -80px auto 30px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(12px);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+/* Inputs */
+input {
+  width: 90%;
+  padding: 12px;
+  margin: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+/* Upload Box */
+.upload-box {
+  border: 2px dashed #00c6ff;
+  padding: 20px;
+  margin: 15px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.upload-box:hover {
+  background: rgba(0,198,255,0.2);
+}
+
+/* Button */
+button {
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  border: none;
+  padding: 12px 25px;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Canvas */
+canvas {
+  margin-top: 20px;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  background: #111;
+}
+
+.feature {
+  text-align: center;
+  max-width: 200px;
+}
+
+.feature img {
+  width: 60px;
+  margin-bottom: 10px;
+}

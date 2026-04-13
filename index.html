@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Face Detection Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="overlay">
+      <h1>AI Face Detection</h1>
+      <p>Upload images and detect human faces using Azure Computer Vision</p>
+    </div>
+  </div>
+
+  <!-- Main Card -->
+  <div class="card">
+    <h2>Detection Dashboard</h2>
+
+    <div class="form-group">
+      <input type="text" id="endpoint" placeholder="🔗 Enter Azure Endpoint">
+      <input type="text" id="key" placeholder="🔑 Enter Azure Key">
+    </div>
+
+    <!-- Upload Section -->
+    <div class="upload-box" onclick="triggerUpload()">
+      <p>📁 Click to Upload Image</p>
+      <input type="file" id="imageInput" accept="image/*" hidden>
+    </div>
+
+    <button onclick="detectFace()">🚀 Detect Faces</button>
+
+    <!-- Image Preview + Canvas -->
+    <div class="preview-container">
+      <canvas id="canvas"></canvas>
+    </div>
+  </div>
+
+  <!-- Features Section -->
+  <div class="features">
+    <div class="feature">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+      <h3>Face Detection</h3>
+      <p>Identify human faces instantly</p>
+    </div>
+
+    <div class="feature">
+      <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png">
+      <h3>AI Powered</h3>
+      <p>Powered by Azure AI services</p>
+    </div>
+
+    <div class="feature">
+      <img src="https://cdn-icons-png.flaticon.com/512/1828/1828919.png">
+      <h3>Fast & Accurate</h3>
+      <p>High performance detection engine</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
